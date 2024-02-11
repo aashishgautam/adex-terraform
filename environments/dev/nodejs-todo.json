@@ -1,0 +1,24 @@
+[
+  {
+    "name": "nodejs-todo-dev",
+    "image": "949263681218.dkr.ecr.us-east-2.amazonaws.com/dev-ecr",
+    "essential": true,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/aws/tasks/dev",
+        "awslogs-region": "us-east-2",
+        "awslogs-stream-prefix": "modejs-todo-container"
+      }
+    },
+    "portMappings": [
+      {
+        "containerPort": 3000,
+        "hostPort": 0
+      }
+    ],
+    "memory": 512,
+    "cpu": 256
+  }
+]
+

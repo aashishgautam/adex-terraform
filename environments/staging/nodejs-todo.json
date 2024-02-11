@@ -1,0 +1,25 @@
+[
+    {
+      "name": "nodejs-todo-staging",
+      "image": "949263681218.dkr.ecr.us-east-2.amazonaws.com/staging-ecr",
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/aws/tasks/staging",
+          "awslogs-region": "us-east-2",
+          "awslogs-stream-prefix": "modejs-todo-container"
+        }
+      },
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 0
+        }
+      ],
+      "memory": 512,
+      "cpu": 256
+    }
+  ]
+  
+  
