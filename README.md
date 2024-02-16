@@ -1,2 +1,2 @@
-# adex-terraform
+# terraform
 Terraform code for the assignment
